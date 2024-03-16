@@ -1,0 +1,10 @@
+^C:\USERS\ADAMA\DESKTOP\IMAC\C\TD2_S2\BUILD\CMAKEFILES\4F962AAE49696D0B22A6B9125B755BEE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/adama/Desktop/imac/c/TD2_s2 -BC:/Users/adama/Desktop/imac/c/TD2_s2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/adama/Desktop/imac/c/TD2_s2/build/TD2_s2_Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
