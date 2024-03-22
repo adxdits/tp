@@ -5,7 +5,7 @@
 #include <numeric>
 using namespace std;
 
-
+//ne pas corriger maintenant sv^^ je nai pas terminer 
 //EXERCICE 2
 auto const is_space = [](char letter){ return letter == ' '; };
 
