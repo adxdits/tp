@@ -44,3 +44,4 @@ Fraction div(Fraction const& f1, Fraction const& f2) {
         f1.denominator * f2.numerator
     });
 }
+

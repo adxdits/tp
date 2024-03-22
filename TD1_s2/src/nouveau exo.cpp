@@ -2,7 +2,7 @@
 #include "utils.hpp"
 #include "fraction.hpp"
 #include <iostream>
-
+//update du 18 mars apres correction check le fichier fraction.hpp
 //exo1
 
 Fraction operator+(Fraction const& a, Fraction const& b) {
@@ -64,7 +64,7 @@ bool operator>=(Fraction const& f1, Fraction const& f2) {
     return !(f1 < f2);
 }
 
-//exo5 
+//exo5 update du 18 mars apres correction check le fichier fraction.hpp
 // dans struct de fraction
 // Méthode add 
 // Fraction& Fraction::operator+=(Fraction const &f)
@@ -115,17 +115,12 @@ struct Fractionsix {
     }
 };
 
-//exo6
-//1)methode dans struct de fraction
-// Fraction::operator float() const
-// {
-//     return static_cast<float>(numerator) / static_cast<float>(denominator);
-// }
+//exo6 je l'ai deja fait mais je nai pas eu de point apres la correction
+
 
 int main() {
     Fractionsix f1{1, 2};
     float d1 = static_cast<float>(f1); // conversion avec static_cast
     std::cout << "f1 en tan que float: " << d1 << std::endl;
-
     return 0;
 }
