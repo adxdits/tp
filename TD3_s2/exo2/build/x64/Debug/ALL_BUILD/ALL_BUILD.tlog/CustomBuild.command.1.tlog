@@ -1,0 +1,10 @@
+^C:\USERS\ADAMA\DESKTOP\IMAC\C\TD3_S2\EXO2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/adama/Desktop/imac/c/TD3_s2/exo2 -BC:/Users/adama/Desktop/imac/c/TD3_s2/exo2/build --check-stamp-file C:/Users/adama/Desktop/imac/c/TD3_s2/exo2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

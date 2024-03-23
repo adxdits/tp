@@ -1,0 +1,10 @@
+^C:\USERS\ADAMA\DESKTOP\IMAC\C\TD3_S2\EXO1\BUILD\CMAKEFILES\742F6EE454810598F8097A73F0E02B60\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/adama/Desktop/imac/c/TD3_s2/exo1 -BC:/Users/adama/Desktop/imac/c/TD3_s2/exo1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/adama/Desktop/imac/c/TD3_s2/exo1/build/exo1_Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
